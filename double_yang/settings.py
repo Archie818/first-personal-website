@@ -27,7 +27,8 @@ SECRET_KEY = 'django-insecure-0sa*dg1f+f_xcaklbksvi)!9+ue7zoh$t4@3ajlv(8ou5%wl2m
 DEBUG = True
 
 ALLOWED_HOSTS = ["localhost",
-                 'double-yang.eba-rnv7pmge.eu-west-2.elasticbeanstalk.com']
+                 'double-yang.eba-rnv7pmge.eu-west-2.elasticbeanstalk.com',
+                 '52.56.251.34']
 
 
 # Application definition
