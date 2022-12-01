@@ -28,6 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["localhost",
                  'double-yang.eba-rnv7pmge.eu-west-2.elasticbeanstalk.com',
+                 'double-yang.com',
+                 'https://double-yang.com/',
                  '52.56.251.34']
 
 
