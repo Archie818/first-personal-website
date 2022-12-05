@@ -28,4 +28,5 @@ def home(request):
         print(name, email, message)
         send_simple_message(name, email, message)
         print("Message sent")
+        return render(request, 'me.html', {'alert': True})
     return render(request, 'me.html')
