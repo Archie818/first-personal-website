@@ -26,13 +26,7 @@ SECRET_KEY = 'django-insecure-0sa*dg1f+f_xcaklbksvi)!9+ue7zoh$t4@3ajlv(8ou5%wl2m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost",
-                 'double-yang.eba-rnv7pmge.eu-west-2.elasticbeanstalk.com',
-                 'double-yang.com',
-                 'www.double-yang.com',
-                 'yangyang.io',
-                 'www.yangyang.io',
-                 '52.56.251.34']
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
