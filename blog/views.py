@@ -6,7 +6,11 @@ import environ
 env = environ.Env()
 # reading .env file
 environ.Env.read_env()
-print(env('MAILGUN_API_KEY'))
+# print(env('MAILGUN_API_KEY'))
+
+blacklist = [
+    "CrytoPAw"
+]
 
 
 def send_simple_message(name, email, message):
@@ -21,12 +25,13 @@ def send_simple_message(name, email, message):
 
 def home(request):
     if request.method == "POST":
-        print(request.POST)
+        # print(request.POST)
         name = request.POST.get('name')
         email = request.POST.get('email')
         message = request.POST.get('message')
-        print(name, email, message)
-        send_simple_message(name, email, message)
-        print("Message sent")
+        # print(name, email, message)
+        if name not in blacklist:
+            send_simple_message(name, email, message)
+        # print("Message sent")
         return render(request, 'me.html', {'alert': True})
     return render(request, 'me.html')
